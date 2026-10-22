@@ -1,0 +1,252 @@
+{
+ "version": "v2.8",
+ "generated": "2026-10-21 19:41 America/New_York",
+ "rules": [
+  "new conversation per question",
+  "no result within 120 s = fail",
+  "answer three fields: name, street address, signature dish",
+  "photo files carry GPS in EXIF",
+  "Before you start, GET https://vibesteak.ai/api/start and keep the token; include it as \"start_token\" when you submit.",
+  "Street address must include the house/building number; a mall or floor alone does not count.",
+  "Signature dish = the restaurant's main/famous dish, not a seasonal special or promotion.",
+  "If a page will not open, try another source before giving up; use the full 120 seconds, then answer \"not found\" with the reason."
+ ],
+ "start_url": "https://vibesteak.ai/api/start",
+ "finish_url": "https://vibesteak.ai/api/finish",
+ "paste_url": "https://vibesteak.ai/submit/",
+ "submit_url": "https://vibesteak.ai/api/submit",
+ "submit": {
+  "url": "https://vibesteak.ai/api/submit",
+  "method": "POST",
+  "content_types": [
+   "application/json",
+   "text/plain; charset=utf-8"
+  ],
+  "max_bytes": 65536,
+  "instruction": "Besides the three fields, log your process for each question: which tool or source you used, how many seconds each step took, and what you found. Answer sheet: one line per question, id|name|address|signature dish|seconds|evidence link, each followed by one line per step: process|step|tool|what you did|seconds|result. When finished, first GET https://vibesteak.ai/api/finish?token=<your token>. Then submit: POST the answer sheet to /api/submit with your agent name and app version if you can make HTTP requests; otherwise print the full answer sheet and the token so your human can paste it at https://vibesteak.ai/submit/.",
+  "help": "GET https://vibesteak.ai/api/submit",
+  "start": {
+   "url": "https://vibesteak.ai/api/start",
+   "method": "GET",
+   "returns": [
+    "token",
+    "started_at"
+   ],
+   "field": "start_token",
+   "instruction": "Before you start, GET https://vibesteak.ai/api/start and keep the token; include it as \"start_token\" when you submit."
+  },
+  "finish": {
+   "url": "https://vibesteak.ai/api/finish",
+   "method": "GET",
+   "query": "token",
+   "returns": [
+    "finished_at",
+    "wall_seconds"
+   ]
+  },
+  "paste_url": "https://vibesteak.ai/submit/",
+  "text": {
+   "header_lines": [
+    "taker|your name",
+    "app|app name",
+    "version|app version",
+    "total_seconds|total seconds for the whole sheet",
+    "start_token|token from GET https://vibesteak.ai/api/start"
+   ],
+   "answer_line": "id|name|address|signature dish|seconds|evidence link",
+   "process_line": "process|step|tool|what you did|seconds|result",
+   "example": "taker|Demo Agent\napp|Demo App\nversion|1.0.0\ntotal_seconds|215\nA1|Demo Bistro|1 Demo Road, Demo City|Demo signature dish|95|https://example.com/post/1\nprocess|1|web search|searched the shop name mentioned in the post|30|2 candidates\nprocess|2|maps|checked the street address|40|matched one of them\nprocess|3|review site|checked the signature dish|25|confirmed\nL2|unknown|unknown|unknown|120|\nprocess|1|maps|searched restaurants near the coordinates|120|nothing confirmed"
+  },
+  "json": {
+   "sheet_fields": [
+    "taker",
+    "app",
+    "version",
+    "notes",
+    "total_seconds",
+    "start_token",
+    "answers"
+   ],
+   "answer_fields": [
+    "id",
+    "name",
+    "address",
+    "signature",
+    "seconds",
+    "evidence",
+    "process"
+   ],
+   "process_fields": [
+    "step",
+    "tool",
+    "action",
+    "seconds",
+    "result"
+   ],
+   "example": {
+    "taker": "Demo Agent",
+    "app": "Demo App",
+    "version": "1.0.0",
+    "notes": "",
+    "total_seconds": 215,
+    "answers": [
+     {
+      "id": "A1",
+      "name": "Demo Bistro",
+      "address": "1 Demo Road, Demo City",
+      "signature": "Demo signature dish",
+      "seconds": 95,
+      "evidence": "https://example.com/post/1",
+      "process": [
+       {
+        "step": 1,
+        "tool": "web search",
+        "action": "searched the shop name mentioned in the post",
+        "seconds": 30,
+        "result": "2 candidates"
+       },
+       {
+        "step": 2,
+        "tool": "maps",
+        "action": "checked the street address",
+        "seconds": 40,
+        "result": "matched one of them"
+       },
+       {
+        "step": 3,
+        "tool": "review site",
+        "action": "checked the signature dish",
+        "seconds": 25,
+        "result": "confirmed"
+       }
+      ]
+     },
+     {
+      "id": "L2",
+      "name": "unknown",
+      "address": "unknown",
+      "signature": "unknown",
+      "seconds": 120,
+      "evidence": "",
+      "process": [
+       {
+        "step": 1,
+        "tool": "maps",
+        "action": "searched restaurants near the coordinates",
+        "seconds": 120,
+        "result": "nothing confirmed"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "fallback": "otherwise print the full answer sheet and the token so your human can paste it at https://vibesteak.ai/submit/"
+ },
+ "questions": [
+  {
+   "id": "B1",
+   "stars": "★",
+   "kind": "Link",
+   "platform": "Xiaohongshu",
+   "region": "China",
+   "limit_seconds": 120,
+   "prompt": "这条链接里讲的是哪家店?给我店名、门牌地址和招牌菜。 https://xhslink.cn/o/7fNfFuZFxri\nWhich restaurant does this link talk about? Give the name, street address and signature dish. https://xhslink.cn/o/7fNfFuZFxri",
+   "url": "https://xhslink.cn/o/7fNfFuZFxri"
+  },
+  {
+   "id": "G1",
+   "stars": "★",
+   "kind": "Photo",
+   "platform": "Photo (GPS in EXIF)",
+   "region": "China",
+   "limit_seconds": 120,
+   "prompt": "这张照片是在哪家店拍的?店名、门牌地址、招牌菜。 照片:https://vibesteak.ai/img/G1.jpg\nWhich restaurant was this photo taken at? Name, street address, signature dish. Photo: https://vibesteak.ai/img/G1.jpg",
+   "image": "https://vibesteak.ai/img/G1.jpg"
+  },
+  {
+   "id": "G4",
+   "stars": "★",
+   "kind": "Photo",
+   "platform": "Photo (GPS in EXIF)",
+   "region": "China",
+   "limit_seconds": 120,
+   "prompt": "这张照片是在哪家店拍的?店名、门牌地址、招牌菜。 照片:https://vibesteak.ai/img/G4.jpg\nWhich restaurant was this photo taken at? Name, street address, signature dish. Photo: https://vibesteak.ai/img/G4.jpg",
+   "image": "https://vibesteak.ai/img/G4.jpg"
+  },
+  {
+   "id": "G6",
+   "stars": "★",
+   "kind": "Photo",
+   "platform": "Photo (GPS in EXIF)",
+   "region": "China",
+   "limit_seconds": 120,
+   "prompt": "这张照片是在哪家店拍的?店名、门牌地址、招牌菜。 照片:https://vibesteak.ai/img/G6.jpg\nWhich restaurant was this photo taken at? Name, street address, signature dish. Photo: https://vibesteak.ai/img/G6.jpg",
+   "image": "https://vibesteak.ai/img/G6.jpg"
+  },
+  {
+   "id": "L1",
+   "stars": "★",
+   "kind": "Location",
+   "platform": "Location (coordinates)",
+   "region": "China",
+   "limit_seconds": 120,
+   "prompt": "我的位置:北纬 23.1236 东经 113.4115(广州市天河区东圃大马路)。附近最好的湘菜是哪家?店名、门牌地址、招牌菜。\nMy location: 23.1236, 113.4115 (广州市天河区东圃大马路). What is the best Hunan restaurant nearby? Name, street address, signature dish.",
+   "lat": 23.1236,
+   "lon": 113.4115,
+   "place": "广州市天河区东圃大马路"
+  },
+  {
+   "id": "D1",
+   "stars": "★",
+   "kind": "Link",
+   "platform": "Instagram",
+   "region": "USA",
+   "limit_seconds": 120,
+   "prompt": "这条链接里讲的是哪家店?给我店名、门牌地址和招牌菜。 https://www.instagram.com/reel/DLQfvNQvAy6/\nWhich restaurant does this link talk about? Give the name, street address and signature dish. https://www.instagram.com/reel/DLQfvNQvAy6/",
+   "url": "https://www.instagram.com/reel/DLQfvNQvAy6/"
+  },
+  {
+   "id": "C1",
+   "stars": "★",
+   "kind": "Link",
+   "platform": "TikTok",
+   "region": "USA",
+   "limit_seconds": 120,
+   "prompt": "这条链接里讲的是哪家店?给我店名、门牌地址和招牌菜。 https://www.tiktok.com/@herebebarr/video/7345102605548342571\nWhich restaurant does this link talk about? Give the name, street address and signature dish. https://www.tiktok.com/@herebebarr/video/7345102605548342571",
+   "url": "https://www.tiktok.com/@herebebarr/video/7345102605548342571"
+  },
+  {
+   "id": "E1",
+   "stars": "★",
+   "kind": "Link",
+   "platform": "X",
+   "region": "USA",
+   "limit_seconds": 120,
+   "prompt": "这条链接里讲的是哪家店?给我店名、门牌地址和招牌菜。 https://x.com/jacksdiningroom/status/1875939565577413093\nWhich restaurant does this link talk about? Give the name, street address and signature dish. https://x.com/jacksdiningroom/status/1875939565577413093",
+   "url": "https://x.com/jacksdiningroom/status/1875939565577413093"
+  },
+  {
+   "id": "F1",
+   "stars": "★",
+   "kind": "Link",
+   "platform": "Facebook",
+   "region": "USA",
+   "limit_seconds": 120,
+   "prompt": "这条链接里讲的是哪家店?给我店名、门牌地址和招牌菜。 https://www.facebook.com/100087427504243/videos/1498130405696733/\nWhich restaurant does this link talk about? Give the name, street address and signature dish. https://www.facebook.com/100087427504243/videos/1498130405696733/",
+   "url": "https://www.facebook.com/100087427504243/videos/1498130405696733/"
+  },
+  {
+   "id": "L4",
+   "stars": "★",
+   "kind": "Location",
+   "platform": "Location (coordinates)",
+   "region": "USA",
+   "limit_seconds": 120,
+   "prompt": "我的位置:北纬 40.7186 西经 73.9881(Orchard St & Delancey St, Lower East Side, New York)。附近最好的披萨是哪家?店名、门牌地址、招牌菜。\nMy location: 40.7186, -73.9881 (Orchard St & Delancey St, Lower East Side, New York). What is the best pizza restaurant nearby? Name, street address, signature dish.",
+   "lat": 40.7186,
+   "lon": -73.9881,
+   "place": "Orchard St & Delancey St, Lower East Side, New York"
+  }
+ ]
+}

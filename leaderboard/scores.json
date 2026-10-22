@@ -1,0 +1,977 @@
+{
+ "schema": "vibesteak-scores/1",
+ "updated": "2026-10-21 23:44 America/New_York",
+ "generated": "2026-10-21 23:45 America/New_York",
+ "elements": [
+  "name",
+  "address",
+  "dish"
+ ],
+ "group_size": 5,
+ "papers": [
+  {
+   "id": "starter-10",
+   "label": "Starter (10)",
+   "version": "v2.8",
+   "url": "https://vibesteak.ai/starter/",
+   "questions": [
+    {
+     "id": "B1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Xiaohongshu",
+     "region": "China"
+    },
+    {
+     "id": "G1",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G4",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G6",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "L1",
+     "stars": "★",
+     "kind": "Location",
+     "platform": "Location (coordinates)",
+     "region": "China"
+    },
+    {
+     "id": "D1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Instagram",
+     "region": "USA"
+    },
+    {
+     "id": "C1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "TikTok",
+     "region": "USA"
+    },
+    {
+     "id": "E1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "X",
+     "region": "USA"
+    },
+    {
+     "id": "F1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Facebook",
+     "region": "USA"
+    },
+    {
+     "id": "L4",
+     "stars": "★",
+     "kind": "Location",
+     "platform": "Location (coordinates)",
+     "region": "USA"
+    }
+   ]
+  },
+  {
+   "id": "main-china-13",
+   "label": "Main · China (13)",
+   "version": "v2.8",
+   "url": "https://vibesteak.ai/china/",
+   "questions": [
+    {
+     "id": "A1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Douyin",
+     "region": "China"
+    },
+    {
+     "id": "A2",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Douyin",
+     "region": "China"
+    },
+    {
+     "id": "B1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Xiaohongshu",
+     "region": "China"
+    },
+    {
+     "id": "B4",
+     "stars": "★★",
+     "kind": "Link",
+     "platform": "Xiaohongshu",
+     "region": "China"
+    },
+    {
+     "id": "G1",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G3",
+     "stars": "★★★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G4",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G5",
+     "stars": "★★★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G6",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G7",
+     "stars": "★★★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "L1",
+     "stars": "★",
+     "kind": "Location",
+     "platform": "Location (coordinates)",
+     "region": "China"
+    },
+    {
+     "id": "L2",
+     "stars": "★★",
+     "kind": "Location",
+     "platform": "Location (coordinates)",
+     "region": "China"
+    },
+    {
+     "id": "L3",
+     "stars": "★★★",
+     "kind": "Location",
+     "platform": "Location (coordinates)",
+     "region": "China"
+    }
+   ]
+  },
+  {
+   "id": "china-7-legacy",
+   "label": "China-7 (legacy)",
+   "version": "v2.8",
+   "legacy": true,
+   "questions": [
+    {
+     "id": "A1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Douyin",
+     "region": "China"
+    },
+    {
+     "id": "B1",
+     "stars": "★",
+     "kind": "Link",
+     "platform": "Xiaohongshu",
+     "region": "China"
+    },
+    {
+     "id": "B4",
+     "stars": "★★",
+     "kind": "Link",
+     "platform": "Xiaohongshu",
+     "region": "China"
+    },
+    {
+     "id": "G1",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G4",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "G6",
+     "stars": "★",
+     "kind": "Photo",
+     "platform": "Photo (GPS in EXIF)",
+     "region": "China"
+    },
+    {
+     "id": "L1",
+     "stars": "★",
+     "kind": "Location",
+     "platform": "Location (coordinates)",
+     "region": "China"
+    }
+   ]
+  }
+ ],
+ "entries": [
+  {
+   "agent": "Grok Bot",
+   "kind": "app",
+   "paper": "starter-10",
+   "stats": {
+    "rank": 1,
+    "n": 1,
+    "max": 30,
+    "best": 28,
+    "mean": 28.0,
+    "drift_runs": null,
+    "changed_questions": [],
+    "wall_seconds_mean": 348.0,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": false
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 28,
+     "wall_seconds": 348,
+     "wall_source": "server",
+     "questions": {
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G6": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "D1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "C1": {
+       "name": 1,
+       "address": 1,
+       "dish": 0
+      },
+      "E1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "F1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "agent": "Dot",
+   "kind": "app",
+   "paper": "starter-10",
+   "stats": {
+    "rank": 2,
+    "n": 1,
+    "max": 30,
+    "best": 27,
+    "mean": 27.0,
+    "drift_runs": null,
+    "changed_questions": [],
+    "wall_seconds_mean": 1367.1,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": false
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 27,
+     "wall_seconds": 1367.1,
+     "wall_source": "server",
+     "questions": {
+      "B1": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G6": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "D1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "C1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "E1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "F1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "agent": "Grok Bot",
+   "kind": "app",
+   "paper": "main-china-13",
+   "stats": {
+    "rank": 1,
+    "n": 1,
+    "max": 39,
+    "best": 19,
+    "mean": 19.0,
+    "drift_runs": null,
+    "changed_questions": [],
+    "wall_seconds_mean": 108.0,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": false
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 19,
+     "wall_seconds": 108,
+     "wall_source": "server",
+     "questions": {
+      "A1": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "A2": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "B1": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "B4": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G3": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G5": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G6": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "G7": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L2": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L3": {
+       "name": 1,
+       "address": 1,
+       "dish": 0
+      }
+     }
+    }
+   ]
+  },
+  {
+   "agent": "Dot",
+   "kind": "app",
+   "paper": "main-china-13",
+   "stats": {
+    "rank": 2,
+    "n": 1,
+    "max": 39,
+    "best": 12,
+    "mean": 12.0,
+    "drift_runs": null,
+    "changed_questions": [],
+    "wall_seconds_mean": 1995.8,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": false
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 12,
+     "wall_seconds": 1995.8,
+     "wall_source": "server",
+     "questions": {
+      "A1": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "A2": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B4": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G3": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G5": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G6": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G7": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L1": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L2": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L3": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "agent": "Home agent",
+   "kind": "home",
+   "paper": "main-china-13",
+   "stats": {
+    "rank": null,
+    "n": 3,
+    "max": 39,
+    "best": 29,
+    "mean": 27.67,
+    "drift_runs": 3,
+    "changed_questions": [
+     "L1",
+     "L2"
+    ],
+    "wall_seconds_mean": null,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": false
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 28,
+     "wall_seconds": null,
+     "wall_source": "none",
+     "questions": {
+      "A1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "A2": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G3": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G4": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "G5": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G6": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G7": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L2": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "L3": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    },
+    {
+     "date": "2026-10-21",
+     "total": 29,
+     "wall_seconds": null,
+     "wall_source": "none",
+     "questions": {
+      "A1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "A2": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G3": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G4": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "G5": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G6": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G7": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L2": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L3": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    },
+    {
+     "date": "2026-10-21",
+     "total": 26,
+     "wall_seconds": null,
+     "wall_source": "none",
+     "questions": {
+      "A1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "A2": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 0
+      },
+      "G3": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G5": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "G6": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G7": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L2": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L3": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    }
+   ],
+   "label": "home · exam room"
+  },
+  {
+   "agent": "WorkBuddy",
+   "kind": "app",
+   "paper": "china-7-legacy",
+   "stats": {
+    "rank": null,
+    "n": 1,
+    "max": 21,
+    "best": 20,
+    "mean": 20.0,
+    "drift_runs": null,
+    "changed_questions": [],
+    "wall_seconds_mean": null,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": true
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 20,
+     "wall_seconds": null,
+     "wall_source": "none",
+     "questions": {
+      "A1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "B4": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "G1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G6": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "L1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "reference": [
+  {
+   "agent": "Grok via xAI API",
+   "kind": "api",
+   "paper": "starter-10",
+   "stats": {
+    "rank": null,
+    "n": 1,
+    "max": 30,
+    "best": 22,
+    "mean": 22.0,
+    "drift_runs": null,
+    "changed_questions": [],
+    "wall_seconds_mean": null,
+    "date": "2026-10-21",
+    "preliminary": true,
+    "legacy": false
+   },
+   "runs": [
+    {
+     "date": "2026-10-21",
+     "total": 22,
+     "wall_seconds": null,
+     "wall_source": "none",
+     "questions": {
+      "B1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "G1": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "G4": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "G6": {
+       "name": 1,
+       "address": 0,
+       "dish": 0
+      },
+      "L1": {
+       "name": 1,
+       "address": 0,
+       "dish": 1
+      },
+      "D1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "C1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "E1": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      },
+      "F1": {
+       "name": 0,
+       "address": 0,
+       "dish": 0
+      },
+      "L4": {
+       "name": 1,
+       "address": 1,
+       "dish": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
