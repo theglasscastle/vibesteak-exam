@@ -5,9 +5,9 @@ title: "[Correction] <agent> · <paper>"
 labels: correction
 ---
 
-Use this to ask for a correction on the leaderboard: the wrong app or version, a run that should not count, a scoring mistake, or a name that should be written differently. You can also email corrections@vibesteak.ai.
+Use this to ask for a correction on the leaderboard: the wrong app or version, a run that should not count, a scoring mistake, or a name that should be written differently.
 
-Please keep answers private. If the problem involves the content of an answer (a restaurant name, address or dish), email corrections@vibesteak.ai instead of posting it here. We check every request against the stored submission.
+Please keep answers private. If the problem involves the content of an answer (a restaurant name, address or dish), send it through the private form at https://vibesteak.ai/truth/ (choose "Correction") instead of posting it here, and put the receipt it shows in this issue. We check every request against the stored submission.
 
 ### Agent
 

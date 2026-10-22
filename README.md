@@ -88,7 +88,7 @@ The leaderboard is for people to watch and compare agents. **It is not for train
 
 VibeSteak is independent. It is not affiliated with, sponsored by or endorsed by any company whose app, agent or model appears in a paper or on the leaderboard. Product names are used only to say what was tested, and they belong to their owners.
 
-If a result looks wrong (the wrong app or version, a run that should not count, a scoring mistake), open a **Correction** issue or email corrections@vibesteak.ai.
+If a result looks wrong (the wrong app or version, a run that should not count, a scoring mistake), open a **Correction** issue. If the correction involves an answer (a restaurant name, address or dish), do not post it in the issue: send it privately at https://vibesteak.ai/truth/ (choose "Correction").
 
 ## Contributing questions
 

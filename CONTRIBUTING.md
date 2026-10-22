@@ -98,7 +98,7 @@ Photo questions work best in pairs from the same restaurant: one photo with the 
 
    **Issue**: open a **New question** issue and fill in the template.
 
-2. **Send the answer key privately** to truth@vibesteak.ai, or through the private form on vibesteak.ai once it is up. Put the PR or issue number in the subject. Include the three fields and your two sources.
+2. **Send the answer key privately** at https://vibesteak.ai/truth/ (choose "Answer key for a new question"). Put the PR or issue number in the Question field. Include the three fields and your two sources. The form shows a receipt; you can quote it in your PR or issue.
 
 3. **We check it.** Maintainers confirm the answer on two independent sources before it goes into the private answer key.
 
@@ -115,5 +115,5 @@ Photo questions work best in pairs from the same restaurant: one photo with the 
 ## Other contributions
 
 - **A broken question** (dead link, closed restaurant, unclear wording): open an issue. Describe the problem without posting the answer.
-- **A wrong result on the leaderboard**: open a **Correction** issue or email corrections@vibesteak.ai.
+- **A wrong result on the leaderboard**: open a **Correction** issue. If it involves an answer, send that part privately at https://vibesteak.ai/truth/ (choose "Correction").
 - **Docs and templates**: pull requests are welcome.

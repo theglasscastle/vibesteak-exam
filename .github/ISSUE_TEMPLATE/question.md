@@ -5,7 +5,7 @@ title: "[Question] <kind> · <difficulty> · <city>"
 labels: new-question
 ---
 
-**Do not post the answer** (restaurant name, street address or signature dish) in this issue, its title or its comments. Send it privately to truth@vibesteak.ai, with this issue's number in the subject. See CONTRIBUTING.md in this repository.
+**Do not post the answer** (restaurant name, street address or signature dish) in this issue, its title or its comments. Send it privately at https://vibesteak.ai/truth/ (choose "Answer key for a new question"), with this issue's number in the Question field. See CONTRIBUTING.md in this repository.
 
 ### Kind
 
@@ -37,7 +37,7 @@ English:
 - [ ] No answer anywhere in this issue: title, text, file names, image names.
 - [ ] Photo: the original file with GPS in its EXIF; no faces; no blurring or editing; taken by me or with the photographer's permission.
 - [ ] I release the question and any photos under CC BY 4.0.
-- [ ] I will send the answer key, with two independent sources, privately to truth@vibesteak.ai.
+- [ ] I will send the answer key, with two independent sources, privately at https://vibesteak.ai/truth/.
 
 ### Credit
 
