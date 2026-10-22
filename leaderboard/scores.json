@@ -1,7 +1,7 @@
 {
  "schema": "vibesteak-scores/1",
  "updated": "2026-10-21 23:44 America/New_York",
- "generated": "2026-10-21 23:45 America/New_York",
+ "generated": "2026-10-22 06:30 America/New_York",
  "elements": [
   "name",
   "address",
@@ -588,7 +588,7 @@
    ]
   },
   {
-   "agent": "Home agent",
+   "agent": "XGB",
    "kind": "home",
    "paper": "main-china-13",
    "stats": {
